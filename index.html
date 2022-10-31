@@ -6,52 +6,56 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="body">
-    <div class="header">
+    <header class="header">
       <img class="header__img" src="./eisenhower-matrix.jpg">
       <a class="header__more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="main">
-      <p class="add-to-list">
-        <label class="add-to-list__title" for="new-task">Add Item</label>
+    </header>
+    <main class="main">
+      <section class="add-to-list">
+        <h3 class="add-to-list__title" for="new-task">Add Item</h3>
         <div class="add-to-list__task-wrapper">
           <input class="add-to-list__input" id="new-task" type="text">
           <button class="add-to-list__button">Add</button>
         </div>
-      </p>
-      <h3 class="incomplete__title">Todo</h3>
-      <ul class="incomplete__todo todo" id="incomplete-tasks">
-        <li class="todo__item">
-          <input class="todo__checkbox" type="checkbox">
-          <label class="todo__name">Pay Bills</label>
-          <input class="todo__name-input" type="text">
-          <button class="todo__edit">Edit</button>
-          <button class="todo__delete">
-            <img class="todo__remove-img" src="./remove.svg">
-          </button>
-        </li>
-        <li class="todo__item todo__item_edit-mode">
-          <input class="todo__checkbox" type="checkbox">
-          <label class="todo__name">Go Shopping</label>
-          <input class="todo__name-input" type="text" value="Go Shopping">
-          <button class="todo__edit">Save</button>
-          <button class="todo__delete">
-            <img class="todo__remove-img" src="./remove.svg">
-          </button>
-        </li>
-      </ul>
-      <h3 class="completed__title">Completed</h3>
-      <ul class="completed__todo todo" id="completed-tasks">
-        <li class="todo__item">
-          <input class="todo__checkbox" type="checkbox" checked>
-          <label class="todo__name">See the Doctor</label>
-          <input class="todo__name-input" type="text">
-          <button class="todo__edit">Edit</button>
-          <button class="todo__delete">
-            <img class="todo__remove-img" src="./remove.svg">
-          </button>
-        </li>
-      </ul>
-    </div>
+      </section>
+      <section class="incomplete">
+        <h3 class="incomplete__title">Todo</h3>
+        <ul class="incomplete__todo todo" id="incomplete-tasks">
+          <li class="todo__item">
+            <input class="todo__checkbox" type="checkbox">
+            <label class="todo__name">Pay Bills</label>
+            <input class="todo__name-input" type="text">
+            <button class="todo__edit">Edit</button>
+            <button class="todo__delete">
+              <img class="todo__remove-img" src="./remove.svg">
+            </button>
+          </li>
+          <li class="todo__item todo__item_edit-mode">
+            <input class="todo__checkbox" type="checkbox">
+            <label class="todo__name">Go Shopping</label>
+            <input class="todo__name-input" type="text" value="Go Shopping">
+            <button class="todo__edit">Save</button>
+            <button class="todo__delete">
+              <img class="todo__remove-img" src="./remove.svg">
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="completed">
+        <h3 class="completed__title">Completed</h3>
+        <ul class="completed__todo todo" id="completed-tasks">
+          <li class="todo__item">
+            <input class="todo__checkbox" type="checkbox" checked>
+            <label class="todo__name">See the Doctor</label>
+            <input class="todo__name-input" type="text">
+            <button class="todo__edit">Edit</button>
+            <button class="todo__delete">
+              <img class="todo__remove-img" src="./remove.svg">
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
