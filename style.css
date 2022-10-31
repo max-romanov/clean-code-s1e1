@@ -16,7 +16,7 @@ body {
   width: 100%;
 }
 
-.header .more_inf {
+.header__more-inf {
   font-family: fantasy, cursive;
 }
 
@@ -34,7 +34,9 @@ body {
   margin: 0 auto 0;
 }
 
-.task {
+.add-to-list__input,
+.todo__name,
+.todo__name-input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -141,13 +143,13 @@ li > input[type="text"] {
   width: 226px;
 }
 
-button.delete img {
+button.todo__delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+button.todo__delete img:hover {
     transform: rotateZ(0);
 }
 
@@ -162,11 +164,11 @@ ul li input[type=text] {
   display: none;
 }
 
-ul li.editMode input[type=text] {
+ul li.todo__item_edit-mode input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editMode label {
+ul li.todo__item_edit-mode label {
   display: none;
 }
